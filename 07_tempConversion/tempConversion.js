@@ -1,7 +1,13 @@
-const convertToCelsius = function() {
+const toSingleDigit = function(num) {
+  return Math.trunc(Math.round(num * 10)) / 10;
+}
+
+const convertToCelsius = function(fahrenheit) {
+  return toSingleDigit((fahrenheit - 32) * (5 / 9));
 };
 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(celcius) {
+  return toSingleDigit(celcius * (9 / 5) + 32);
 };
 
 // Do not edit below this line
