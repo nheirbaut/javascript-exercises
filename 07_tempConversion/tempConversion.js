@@ -1,5 +1,5 @@
 const toSingleDigit = function(num) {
-  return Math.trunc(Math.round(num * 10)) / 10;
+  return Math.round(num * 10) / 10;
 }
 
 const convertToCelsius = function(fahrenheit) {
